@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(51, 229, 146);
+}
+
+header {
+    background-color: rgb(51, 229, 146);
+    padding: 70px;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.3em;
+    color: #ffffff;
+    text-align: left;
+}
+
+p#bottomText {
+    margin: 180px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+p {
+    margin: 50px 0 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-box {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    height: 300px;
+    overflow: visible;
+}
+
+.hero {
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.hero img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.hero-box:hover .hero img {
+    transform: scale(1.1);
+}
+
+.selected-hero{line-height: 0px;}
+
+.selected-hero[data-hero="1"] img:hover,
+.selected-hero[data-hero="5"] img:hover,
+.selected-hero[data-hero="13"] img:hover,
+.selected-hero[data-hero="18"] img:hover,
+.selected-hero[data-hero="27"] img:hover,
+.selected-hero[data-hero="29"] img:hover {
+    width: 80px; /* 이미지 크기를 80px로 고정 */
+    height: auto;
+    filter: brightness(120%);
+    content: url('silhouettes/superman.png');
+}
+
+    
+    .divider {
+    width: 100%;
+    margin-top: 50px;
+    border-top: none;
+    }
+    
+    .superman-logo {
+    max-width: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    }
